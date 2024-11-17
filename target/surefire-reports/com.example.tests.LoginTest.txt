@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: com.example.tests.LoginTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 4.34 s <<< FAILURE! - in com.example.tests.LoginTest
+testlogin(com.example.tests.LoginTest)  Time elapsed: 4.197 s  <<< ERROR!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 130.0.6723.117 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'DESKTOP-1KVI08C', ip: '192.168.137.1'
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}]}]
+	at com.example.tests.LoginTest.setup(LoginTest.java:23)
+
