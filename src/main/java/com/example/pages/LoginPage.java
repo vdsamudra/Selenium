@@ -30,4 +30,19 @@ public class LoginPage extends BasePage{
     public void clickLogin() {
         clickElement(loginButton);
     }
+
+    public boolean usernameFieldIsDisplayed(){
+        elementIsDisplay(usernameField);
+                return true;
+    }
+
+    public boolean passwordFieldDisplayed(){
+        elementIsDisplay(passwordField);
+                return true;
+    }
+
+    public boolean loginButtonIsDisplayed(){
+        elementIsDisplay(loginButton);
+                return true;
+    }
 }

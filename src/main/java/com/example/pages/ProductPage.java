@@ -20,7 +20,7 @@ public class ProductPage extends BasePage {
 
     // Element locators
     By tittleProductPage = By.className("product_label");
-    By burgerMenuButton = By.className("bm-burger-bars");
+    By burgerMenuButton = By.xpath("//div[@class='bm-burger-button']");
     By logoutButton = By.id("logout_sidebar_link");
     By cartIcon = By.id("shopping_cart_container");
     By sortButton = By.className("product_sort_container");

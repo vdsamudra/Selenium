@@ -47,6 +47,11 @@ public class BasePage {
         selectSort.selectByIndex(index);
     }
 
+    public void elementIsDisplay(By elementLocator){
+        waitVisibility(elementLocator);
+        driver.findElement(elementLocator).isDisplayed();
+    }
+
    
     
     

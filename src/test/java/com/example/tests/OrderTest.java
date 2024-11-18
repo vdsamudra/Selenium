@@ -1,6 +1,7 @@
 package com.example.tests;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.After;
 import org.junit.Before;
@@ -14,6 +15,8 @@ import com.example.pages.CheckoutStepTwoPage;
 import com.example.pages.FinishPage;
 import com.example.pages.LoginPage;
 import com.example.pages.ProductPage;
+
+
 
 
 
@@ -117,6 +120,14 @@ public class OrderTest {
         assertEquals(expectedThankText, finishPage.getThanksText());
         assertEquals(expectedImagePonyExpresAtr, finishPage.getImagePonyExpress());
 
+        // log out
+        productPage.openBurgerMenu();
+        productPage.clickLogoutButton();
+
+        // validasi kembali ke halaman login
+        assertTrue("element usernamefield tidak muncul", loginPage.usernameFieldIsDisplayed());
+        assertTrue("element passwordfield tidak muncul", loginPage.passwordFieldDisplayed());
+        assertTrue("element button login tidak muncul", loginPage.loginButtonIsDisplayed());
     }
 
     @After
